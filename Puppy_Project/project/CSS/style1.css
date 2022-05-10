@@ -1,0 +1,103 @@
+/* Start working in our puppy lover page 
+    Date:3/29/2022 */
+
+/* setting value for the entire page */
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* setting value for the header text */
+.puppy-lover-page-top {
+  text-align: center;
+  background-color: #195774;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: azure;
+  font-size: 37px;
+}
+/* setting the attribute for the banner */
+.banner img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* the continuer containg the three puppys
+wodth :960    if not to make the value respomsive */
+.three-puppys,
+.two-puppys {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+/* fixing the attribute for the three puppys */
+/* setting the attribute for the middle part in the three parts */
+.missing-puppy {
+  background-color: #ee4d65;
+  text-align: center;
+  max-height: 310px;
+  width: 310px;
+}
+.missing-puppy p {
+  font-size: 60px;
+  padding: 40px;
+  
+}
+/* ends here for the middle part */
+
+/* section one ends here */
+/* this is the part for the transition text */
+.transition {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+/* the two containers
+setting there attribute */
+.puppy-right,
+.puppy-left {
+  width: 50%;
+}
+
+/* setting the attribute for the image for the div elements */
+.puppy-right img,
+.puppy-left img {
+  width: 100%;
+}
+/* separating the two images */
+.puppy-right {
+  margin-right: 1%;
+}
+.puppy-left {
+  margin-left: 1%;
+}
+
+/* the footer part */
+.foot {
+  text-align: center;
+  padding: 25px 0px 25px;
+  background-color: #195774;
+  margin-top: 35px;
+  color: azure;
+  font-size: 27px;
+}
+/* working ends on 3/30/2022 */
+
+/* this part is optional */
+.missing-puppy:hover{
+  transform: scale(1.5);
+  background-color: #195774;
+}
+.puppy-left:hover{
+  transform: scale(1.25);
+}
+.puppy-right:hover{
+  transform: scale(1.25);
+}

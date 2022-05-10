@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: aliceblue;
+  background-color:  hsl(210, 46%, 95%);
+}
+.black{
+    color: black;
+}
+.big-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-width: 960px;
+  /* min-height: 980px; */
+  margin: 100px auto;
+  align-items: center;
+  gap: 10px 40px;
+  /* grid-template-areas:
+    "header header header1 header2"
+    "head footer footer header2"; */
+}
+.element1 {
+  background-color: hsl(263, 55%, 52%); 
+  grid-area: 1/1/1/3;
+  border-radius: 3%;
+ /* height: 580px; */
+  
+  text-align: center;
+}
+.element2 {
+  background-color:  hsl(217, 19%, 35%);
+  grid-area: 1/3/1/4;
+  border-radius: 3%;
+  /* animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+}
+.element3 {
+  grid-area: 1/4/3/5;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 3%;
+  box-shadow: 10px 5px 5px 0 hsl(0, 0%, 81%);
+  /* animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+}
+.element4 {
+  background-color: hsl(0, 0%, 100%);
+  grid-area: 2/1/2/2;
+  border-radius: 3%;
+  box-shadow: 10px 5px 5px 0 hsl(0, 0%, 81%);
+  /* animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+}
+.element5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: 2/2/2/4;
+  border-radius: 3%;
+  /* animation-name: anim;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+}
+img {
+  /* border: 1px transparent solid; */
+  border-radius: 50%;
+  /* padding: 0 25px 0 0; */
+}
+.pic {
+  display: flex;
+  padding: 50px 10px 10px;
+}
+.text-wrapper ul {
+  display: block;
+  padding: 10px 10px;
+  list-style-type: none;
+}
+.verified{
+    opacity: 50%;
+}
+blockquote{
+    opacity: 70%;
+    padding: 10px 25px 50px;
+}
+@media screen and (max-width: 800px) {
+  .big-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 100%;
+    font-size: 17px;
+    row-gap: 35px;
+  }
+  .element1 {
+    width: 100%;
+    height: 580px;
+    margin: 35px auto 0;
+  }
+  .element2 {
+    width: 100%;
+    height: 580px;
+  }
+  .element3 {
+    width: 100%;
+    height: 580px;
+    order: 5;
+  }
+  .element4 {
+    width: 100%;
+    height: 580px;
+  }
+  .element5 {
+    width: 100%;
+    height: 580px;
+  }
+}
